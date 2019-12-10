@@ -45,8 +45,7 @@ bool freezing_slow_path(struct task_struct *p)
 	if (test_tsk_thread_flag(p, TIF_MEMDIE))
 		return false;
 
-	if (cgroup_freezer_killable(p) && (fatal_signal_pending(p)
-				|| (p->flags & PF_SIGNALED)))
+	if (cgroup_freezer_killable(p) && fatal_signal_pending(p))
 		return false;
 
 	if (pm_nosig_freezing || cgroup_freezing(p))
@@ -94,16 +93,8 @@ bool __refrigerator(bool check_kthr_stop)
 		 * immediately (if there is a non-fatal signal pending), and
 		 * put the task into sleep.
 		 */
-		if (killable) {
-			long flags;
-
-			if (lock_task_sighand(current, &flags)) {
-				if (!sigismember(&current->pending.signal,
-						SIGKILL))
-					clear_thread_flag(TIF_SIGPENDING);
-				unlock_task_sighand(current, &flags);
-			}
-		}
+		if (killable)
+			clear_thread_flag(TIF_SIGPENDING);
 
 		schedule();
 	}
