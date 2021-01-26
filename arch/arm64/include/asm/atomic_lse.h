@@ -484,7 +484,7 @@ static inline unsigned long __cmpxchg_case_##name(volatile void *ptr,	\
 									\
 	asm volatile(ARM64_LSE_ATOMIC_INSN(				\
 	/* LL/SC */							\
-	__LL_SC_CMPXCHG(name)						\
+	__LL_SC_CMPXCHG(name##sz)					\
 	__nops(3),							\
 	/* LSE atomics */						\
 	"	prfm	pstl1strm, %[v]\n"				\
