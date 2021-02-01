@@ -41,6 +41,8 @@
 #include "mtk_sched_mon.h"
 #endif
 
+#define LITTLE_CPU_MASK	((1UL << (NR_CPUS / 2)) - 1)
+
 /**
  * cpuhp_cpu_state - Per cpu hotplug state storage
  * @state:	The current cpu state
@@ -289,6 +291,9 @@ void cpu_maps_update_done(void)
  * Should always be manipulated under cpu_add_remove_lock
  */
 static int cpu_hotplug_disabled;
+
+static const unsigned long little_cluster_cpus = LITTLE_CPU_MASK;
+const struct cpumask *const cpu_lp_mask = to_cpumask(&little_cluster_cpus);
 
 #ifdef CONFIG_HOTPLUG_CPU
 
