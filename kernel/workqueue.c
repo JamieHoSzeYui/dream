@@ -50,6 +50,7 @@
 #include <linux/moduleparam.h>
 #include <linux/uaccess.h>
 #include <linux/nmi.h>
+#include <linux/cpumask.h>
 
 #include "workqueue_internal.h"
 
