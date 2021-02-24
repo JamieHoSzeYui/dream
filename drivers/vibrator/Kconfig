@@ -1,0 +1,6 @@
+config ONEPLUS_VIBRATE
+       default y
+       tristate "Vibration driver"
+       depends on I2C
+       help
+       OnePlus vibration driver ported from SM8150
