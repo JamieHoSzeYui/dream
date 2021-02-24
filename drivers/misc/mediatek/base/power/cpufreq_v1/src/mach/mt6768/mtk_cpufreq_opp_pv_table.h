@@ -1,4 +1,4 @@
-/*
+	/*
  * Copyright (C) 2016 MediaTek Inc.
  *
  * This program is free software; you can redistribute it and/or modify
@@ -43,7 +43,7 @@ static unsigned int FY_6768Tbl[NR_FREQ * NR_MT_CPU_DVFS][ARRAY_COL_SIZE] = {
 
 
     /* B */
-	{ 2500, 94, 1, 1 },
+	{ 2300, 94, 1, 1 },
 	{ 1950, 92, 1, 1 },
 	{ 1900, 90, 1, 1 },
 	{ 1850, 88, 1, 1 },
@@ -111,7 +111,7 @@ static unsigned int FY_6767Tbl[NR_FREQ * NR_MT_CPU_DVFS][ARRAY_COL_SIZE] = {
 
 
     /* B */
-	{ 2300, 85, 1, 1 },
+	{ 2100, 85, 1, 1 },
 	{ 1740, 82, 1, 1 },
 	{ 1681, 78, 1, 1 },
 	{ 1621, 75, 1, 1 },
@@ -159,7 +159,7 @@ static unsigned int proTbl[NR_FREQ * NR_MT_CPU_DVFS][ARRAY_COL_SIZE] = {
 	/* Freq, Vproc, post_div, clk_div */
 
 	/* L */
-	{ 2500, 92, 1, 1 },
+	{ 2300, 92, 1, 1 },
 	{ 1950, 89, 1, 1 },
 	{ 1900, 86, 1, 1 },
 	{ 1850, 83, 1, 1 },
@@ -183,7 +183,7 @@ static unsigned int proTbl[NR_FREQ * NR_MT_CPU_DVFS][ARRAY_COL_SIZE] = {
 	{ 2202, 99, 1, 1 },
 	{ 2133, 99, 1, 1 },
 	{ 2066, 97, 1, 1 },
-	{ 2500, 94, 1, 1 },
+	{ 2300, 94, 1, 1 },
 	{ 1933, 91, 1, 1 },
 	{ 1866, 88, 1, 1 },
 	{ 1800, 85, 1, 1 },
@@ -245,7 +245,7 @@ static unsigned int FY_6768Tbl_v7[NR_FREQ * NR_MT_CPU_DVFS][ARRAY_COL_SIZE] = {
 
 
 
-	{ 2500, 92, 1, 1 }, /* B */
+	{ 2300, 92, 1, 1 }, /* B */
 	{ 1950, 90, 1, 1 },
 	{ 1900, 88, 1, 1 },
 	{ 1850, 86, 1, 1 },
@@ -310,7 +310,7 @@ static unsigned int FY_6767Tbl_v7[NR_FREQ * NR_MT_CPU_DVFS][ARRAY_COL_SIZE] = {
 
 
 
-	{ 2300, 84, 1, 1 }, /* B */
+	{ 2100, 84, 1, 1 }, /* B */
 	{ 1740, 81, 1, 1 },
 	{ 1681, 77, 1, 1 },
 	{ 1621, 74, 1, 1 },
@@ -355,7 +355,7 @@ static unsigned int FY_6767Tbl_v7[NR_FREQ * NR_MT_CPU_DVFS][ARRAY_COL_SIZE] = {
 static unsigned int proTbl_v7[NR_FREQ * NR_MT_CPU_DVFS][ARRAY_COL_SIZE] = {
 	/* Freq, Vproc, post_div, clk_div */
 
-	{ 2500, 93, 1, 1 }, /* L */
+	{ 2300, 93, 1, 1 }, /* L */
 	{ 1950, 89, 1, 1 },
 	{ 1900, 85, 1, 1 },
 	{ 1850, 81, 1, 1 },
@@ -378,7 +378,7 @@ static unsigned int proTbl_v7[NR_FREQ * NR_MT_CPU_DVFS][ARRAY_COL_SIZE] = {
 	{ 2202, 99, 1, 1 }, /* B */
 	{ 2133, 97, 1, 1 },
 	{ 2066, 94, 1, 1 },
-	{ 2500, 92, 1, 1 },
+	{ 2300, 92, 1, 1 },
 	{ 1933, 89, 1, 1 },
 	{ 1866, 87, 1, 1 },
 	{ 1800, 84, 1, 1 },
@@ -421,7 +421,7 @@ static unsigned int FY_G75Tbl[NR_FREQ * NR_MT_CPU_DVFS][ARRAY_COL_SIZE] = {
 	/* Freq, Vproc, post_div, clk_div */
 
 	/* L */
-	{ 2300, 81, 1, 1 },
+	{ 2100, 81, 1, 1 },
 	{ 1625, 69, 2, 1 },
 	{ 1500, 63, 2, 1 },
 	{ 1450, 61, 2, 1 },
@@ -441,7 +441,7 @@ static unsigned int FY_G75Tbl[NR_FREQ * NR_MT_CPU_DVFS][ARRAY_COL_SIZE] = {
 
 
     /* B */
-	{ 2500, 94, 1, 1 },
+	{ 2300, 94, 1, 1 },
 	{ 1950, 92, 1, 1 },
 	{ 1900, 90, 1, 1 },
 	{ 1850, 88, 1, 1 },
