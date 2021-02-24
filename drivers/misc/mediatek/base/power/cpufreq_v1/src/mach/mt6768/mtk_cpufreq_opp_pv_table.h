@@ -43,7 +43,7 @@ static unsigned int FY_6768Tbl[NR_FREQ * NR_MT_CPU_DVFS][ARRAY_COL_SIZE] = {
 
 
     /* B */
-	{ 2000, 94, 1, 1 },
+	{ 2500, 94, 1, 1 },
 	{ 1950, 92, 1, 1 },
 	{ 1900, 90, 1, 1 },
 	{ 1850, 88, 1, 1 },
@@ -159,7 +159,7 @@ static unsigned int proTbl[NR_FREQ * NR_MT_CPU_DVFS][ARRAY_COL_SIZE] = {
 	/* Freq, Vproc, post_div, clk_div */
 
 	/* L */
-	{ 2000, 92, 1, 1 },
+	{ 2500, 92, 1, 1 },
 	{ 1950, 89, 1, 1 },
 	{ 1900, 86, 1, 1 },
 	{ 1850, 83, 1, 1 },
@@ -183,7 +183,7 @@ static unsigned int proTbl[NR_FREQ * NR_MT_CPU_DVFS][ARRAY_COL_SIZE] = {
 	{ 2202, 99, 1, 1 },
 	{ 2133, 99, 1, 1 },
 	{ 2066, 97, 1, 1 },
-	{ 2000, 94, 1, 1 },
+	{ 2500, 94, 1, 1 },
 	{ 1933, 91, 1, 1 },
 	{ 1866, 88, 1, 1 },
 	{ 1800, 85, 1, 1 },
@@ -245,7 +245,7 @@ static unsigned int FY_6768Tbl_v7[NR_FREQ * NR_MT_CPU_DVFS][ARRAY_COL_SIZE] = {
 
 
 
-	{ 2000, 92, 1, 1 }, /* B */
+	{ 2500, 92, 1, 1 }, /* B */
 	{ 1950, 90, 1, 1 },
 	{ 1900, 88, 1, 1 },
 	{ 1850, 86, 1, 1 },
@@ -355,7 +355,7 @@ static unsigned int FY_6767Tbl_v7[NR_FREQ * NR_MT_CPU_DVFS][ARRAY_COL_SIZE] = {
 static unsigned int proTbl_v7[NR_FREQ * NR_MT_CPU_DVFS][ARRAY_COL_SIZE] = {
 	/* Freq, Vproc, post_div, clk_div */
 
-	{ 2000, 93, 1, 1 }, /* L */
+	{ 2500, 93, 1, 1 }, /* L */
 	{ 1950, 89, 1, 1 },
 	{ 1900, 85, 1, 1 },
 	{ 1850, 81, 1, 1 },
@@ -378,7 +378,7 @@ static unsigned int proTbl_v7[NR_FREQ * NR_MT_CPU_DVFS][ARRAY_COL_SIZE] = {
 	{ 2202, 99, 1, 1 }, /* B */
 	{ 2133, 97, 1, 1 },
 	{ 2066, 94, 1, 1 },
-	{ 2000, 92, 1, 1 },
+	{ 2500, 92, 1, 1 },
 	{ 1933, 89, 1, 1 },
 	{ 1866, 87, 1, 1 },
 	{ 1800, 84, 1, 1 },
@@ -441,7 +441,7 @@ static unsigned int FY_G75Tbl[NR_FREQ * NR_MT_CPU_DVFS][ARRAY_COL_SIZE] = {
 
 
     /* B */
-	{ 2000, 94, 1, 1 },
+	{ 2500, 94, 1, 1 },
 	{ 1950, 92, 1, 1 },
 	{ 1900, 90, 1, 1 },
 	{ 1850, 88, 1, 1 },
